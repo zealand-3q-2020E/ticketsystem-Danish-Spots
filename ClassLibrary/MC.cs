@@ -4,24 +4,24 @@ using System.Text;
 
 namespace ClassLibrary
 {
-    public class Car : Vehicle
+    public class MC : Vehicle
     {
         /// <summary>
-        /// Method for getting the price of a ticket for the car
+        /// Method for getting the price of a ticket for the MC
         /// </summary>
-        /// <returns>returns the double 240.00</returns>
+        /// <returns>returns the double 125.00</returns>
         public override double Price()
         {
-            return 240.00;
+            return 125.00;
         }
 
         /// <summary>
         /// Method for getting the type of vehicle
         /// </summary>
-        /// <returns>returns the string "Car"</returns>
+        /// <returns>returns the string "MC"</returns>
         public override string VehicleType()
         {
-            return "Car";
+            return "MC";
         }
     }
 }

@@ -31,5 +31,20 @@ namespace TestLibrary
             //Assert
             Assert.AreEqual("Car", vT);
         }
+
+        [TestMethod]
+        public void TestGetAndSetLicensePlate()
+        {
+            //Arrange
+            Car car = new Car();
+            //Example plate
+            string lP = "BD 03 302";
+
+            //Act
+            car.LicensePlate = lP;
+
+            //Assert
+            Assert.AreEqual(lP, car.LicensePlate);
+        }
     }
 }
