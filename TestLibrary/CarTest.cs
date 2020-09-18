@@ -38,7 +38,7 @@ namespace TestLibrary
             //Arrange
             Car car = new Car();
             //Example plate
-            string lP = "BD 03 302";
+            string lP = "BD03302";
 
             //Act
             car.LicensePlate = lP;

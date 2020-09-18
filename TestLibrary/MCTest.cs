@@ -34,5 +34,20 @@ namespace TestLibrary
             //Assert
             Assert.AreEqual("MC", vT);
         }
+
+        [TestMethod]
+        public void TestGetAndSetLicensePlate()
+        {
+            //Arrange
+            MC mc = new MC();
+            //Example plate
+            string lP = "BD03302";
+
+            //Act
+            mc.LicensePlate = lP;
+
+            //Assert
+            Assert.AreEqual(lP, mc.LicensePlate);
+        }
     }
 }

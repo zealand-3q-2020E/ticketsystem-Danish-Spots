@@ -7,13 +7,23 @@ namespace ClassLibrary
 {
     public class Vehicle
     {
+        private string _lP = "";
+
         /// <summary>
         /// Property for getting and setting the license plate of a vehicle buying a ticket
         /// </summary>
         public string LicensePlate
         {
-            get;
-            set;
+            get { return _lP;}
+            set
+            {
+                if (value.Length > 7)
+                {
+                    throw new LicensePlateMaxCharacterLengthException();
+                }
+
+                _lP = value;
+            }
         }
 
         /// <summary>
