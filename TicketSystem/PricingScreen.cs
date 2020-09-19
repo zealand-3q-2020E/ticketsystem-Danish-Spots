@@ -27,6 +27,9 @@ namespace TicketSystem
 
             Console.Write("\tTotal Price: \t");
             Console.WriteLine(EnterInformationScreen.VehicleObject.FinalPrice);
+
+            Console.Write("\tTicket For: \t");
+            Console.WriteLine(EnterInformationScreen.SelectedBridge);
         }
 
 

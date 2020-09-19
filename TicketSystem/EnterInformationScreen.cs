@@ -12,6 +12,7 @@ namespace TicketSystem
         public static Constants.VehicleType SelectedVehicleType { get; set; }
         public static Vehicle VehicleObject { get; set; }
         public static string EnteredLicensePlate { get; set; }
+        public static string SelectedBridge { get; set; }
 
         public static void EnterInfoScreen()
         {

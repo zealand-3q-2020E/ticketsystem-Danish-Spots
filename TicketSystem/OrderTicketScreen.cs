@@ -75,18 +75,22 @@ namespace TicketSystem
                     {
                         case 0:
                             EnterInformationScreen.SelectedTicketType = Constants.TicketType.GENERIC_TICKET;
+                            EnterInformationScreen.SelectedBridge = "Generic bridge Ticket";
                             VehicleSelectScreen.SelectVehicleScreen();
                             break;
                         case 1:
                             EnterInformationScreen.SelectedTicketType = Constants.TicketType.STOREBAELT_TICKET;
+                            EnterInformationScreen.SelectedBridge = "Storebaelt bridge Ticket Ticket";
                             VehicleSelectScreen.SelectVehicleScreen();
                             break;
                         case 2:
                             EnterInformationScreen.SelectedTicketType = Constants.TicketType.ORESUND_TICKET;
+                            EnterInformationScreen.SelectedBridge = "Oresund Ticket";
                             VehicleSelectScreen.SelectVehicleScreen();
                             break;
                         case 3:
                             EnterInformationScreen.SelectedTicketType = Constants.TicketType.NOT_SELECTED;
+                            EnterInformationScreen.SelectedBridge = "";
                             StartScreen.StartScreenMethod();
                             break;
                     }

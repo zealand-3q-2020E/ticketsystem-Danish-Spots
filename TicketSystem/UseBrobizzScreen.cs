@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 using StoreBaeltTicketLibrary;
+using TicketLibrary;
+using OresundBron;
 
 namespace TicketSystem
 {
@@ -55,12 +57,13 @@ namespace TicketSystem
 
         public static void CheckIfWeekend(bool useBrobizz)
         {
-            if (EnterInformationScreen.VehicleObject.Date.DayOfWeek == DayOfWeek.Sunday ||
-                EnterInformationScreen.VehicleObject.Date.DayOfWeek == DayOfWeek.Saturday)
+            if (EnterInformationScreen.SelectedTicketType == Constants.TicketType.STOREBAELT_TICKET)
             {
-                if (EnterInformationScreen.SelectedTicketType == Constants.TicketType.STOREBAELT_TICKET)
+                if (EnterInformationScreen.VehicleObject.Date.DayOfWeek == DayOfWeek.Sunday ||
+                    EnterInformationScreen.VehicleObject.Date.DayOfWeek == DayOfWeek.Saturday)
                     EnterInformationScreen.VehicleObject.FinalPrice =
                         new WeekendDiscount().WeekendDiscountCar(useBrobizz);
+
             }
             else
                 EnterInformationScreen.VehicleObject.Price(useBrobizz);
