@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Reflection.Metadata.Ecma335;
-using System.Text;
 
-namespace ClassLibrary
+namespace TicketLibrary
 {
     public class Vehicle
     {
@@ -36,12 +33,24 @@ namespace ClassLibrary
         }
 
         /// <summary>
-        /// Method to be overriden in child classes that returns the price of a ticket for a vehicle
+        /// Method to be overridden in child classes for returning the price of a ticket
         /// </summary>
+        /// <param name="useBrobizz">A bool that determines if a brobizz is used, true is yes and false is no</param>
         /// <returns>returns 0 unless overridden</returns>
-        public virtual double Price()
+        public virtual double Price(bool useBrobizz)
         {
             return 0;
+        }
+
+        /// <summary>
+        /// Internal method that can only be called from child classes, which calculates the new price if a brobizz is used.
+        /// </summary>
+        /// <param name="initialPrice">The initial price of the ticket</param>
+        /// <param name="discount">the discount percentage given in double form eg 5 is 5%</param>
+        /// <returns>returns the initial price - the discount</returns>
+        protected double Price(double initialPrice, double discount)
+        {
+            return initialPrice - (initialPrice * (discount/100));
         }
 
         /// <summary>

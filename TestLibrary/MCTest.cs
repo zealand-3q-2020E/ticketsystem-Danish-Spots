@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ClassLibrary;
+using TicketLibrary;
 
 namespace TestLibrary
 {
@@ -10,16 +10,18 @@ namespace TestLibrary
     public class MCTest
     {
         [TestMethod]
-        public void TestPrice()
+        [DataRow(false, 125)]
+        [DataRow(true, 118.75)]
+        public void TestPrice(bool useBrobizz, double expected)
         {
             //Arrange
             MC mc = new MC();
 
             //Act
-            double price = mc.Price();
+            double price = mc.Price(useBrobizz);
 
             //Assert
-            Assert.AreEqual(125.00, price);
+            Assert.AreEqual(expected, price, 0.01);
         }
 
         [TestMethod]

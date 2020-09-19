@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ClassLibrary;
+using TicketLibrary;
 
 namespace TestLibrary
 {
@@ -13,7 +13,7 @@ namespace TestLibrary
             Car car = new Car();
 
             //Act
-            double price = car.Price();
+            double price = car.Price(false);
 
             //Assert
             Assert.AreEqual(240.00, price);

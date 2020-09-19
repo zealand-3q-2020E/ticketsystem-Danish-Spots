@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace ClassLibrary
+namespace TicketLibrary
 {
     class LicensePlateMaxCharacterLengthException : Exception
     {

@@ -1,17 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ClassLibrary
+﻿namespace TicketLibrary
 {
     public class MC : Vehicle
     {
         /// <summary>
-        /// Method for getting the price of a ticket for the MC
+        /// Method for returning the price of a ticket
         /// </summary>
-        /// <returns>returns the double 125.00</returns>
-        public override double Price()
+        /// <param name="useBrobizz">Specify if the vehicle uses a brobizz (true or false)</param>
+        /// <returns>returns 125.00 if no brobizz is used, other wise returns 125.00 - 5% of 125.00</returns>
+        public override double Price(bool useBrobizz)
         {
+            if (useBrobizz)
+            {
+                return base.Price(125, 5);
+            }
             return 125.00;
         }
 
