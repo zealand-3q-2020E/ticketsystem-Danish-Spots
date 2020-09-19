@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TicketLibrary</name>
+    </assembly>
+    <members>
+        <member name="M:TicketLibrary.Car.Price(System.Boolean)">
+            <summary>
+            Method for returning the price of a ticket
+            </summary>
+            <param name="useBrobizz">Specify if the vehicle uses a brobizz (true or false)</param>
+            <returns>returns 240.00 if no brobizz is used, other wise returns 240.00 - 5% of 240.00</returns>
+        </member>
+        <member name="M:TicketLibrary.Car.VehicleType">
+            <summary>
+            Method for getting the type of vehicle
+            </summary>
+            <returns>returns the string "Car"</returns>
+        </member>
+        <member name="M:TicketLibrary.MC.Price(System.Boolean)">
+            <summary>
+            Method for returning the price of a ticket
+            </summary>
+            <param name="useBrobizz">Specify if the vehicle uses a brobizz (true or false)</param>
+            <returns>returns 125.00 if no brobizz is used, other wise returns 125.00 - 5% of 125.00</returns>
+        </member>
+        <member name="M:TicketLibrary.MC.VehicleType">
+            <summary>
+            Method for getting the type of vehicle
+            </summary>
+            <returns>returns the string "MC"</returns>
+        </member>
+        <member name="P:TicketLibrary.Vehicle.LicensePlate">
+            <summary>
+            Property for getting and setting the license plate of a vehicle buying a ticket
+            </summary>
+        </member>
+        <member name="P:TicketLibrary.Vehicle.Date">
+            <summary>
+            Property for getting and setting the Date and Time of ticket purchase
+            </summary>
+        </member>
+        <member name="M:TicketLibrary.Vehicle.Price(System.Boolean)">
+            <summary>
+            Method to be overridden in child classes for returning the price of a ticket
+            </summary>
+            <param name="useBrobizz">A bool that determines if a brobizz is used, true is yes and false is no</param>
+            <returns>returns 0 unless overridden</returns>
+        </member>
+        <member name="M:TicketLibrary.Vehicle.Price(System.Double,System.Double)">
+            <summary>
+            Internal method that can only be called from child classes, which calculates the new price if a brobizz is used.
+            </summary>
+            <param name="initialPrice">The initial price of the ticket</param>
+            <param name="discount">the discount percentage given in double form eg 5 is 5%</param>
+            <returns>returns the initial price - the discount</returns>
+        </member>
+        <member name="M:TicketLibrary.Vehicle.VehicleType">
+            <summary>
+            Method to be overriden in child classes that returns the vehicle type of a vehicle buying a ticket
+            </summary>
+            <returns>returns "" unless overridden</returns>
+        </member>
+    </members>
+</doc>

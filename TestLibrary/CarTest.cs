@@ -46,5 +46,21 @@ namespace TestLibrary
             //Assert
             Assert.AreEqual(lP, car.LicensePlate);
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(LicensePlateMaxCharacterLengthException))]
+        public void TestSetLicensePlateBeyond7Characters()
+        {
+            //Arrange
+            Car car = new Car();
+            //Example plate
+            string lP = "BD033023";
+
+            //Act
+            car.LicensePlate = lP;
+
+            //Assert
+            Assert.AreEqual(lP, car.LicensePlate);
+        }
     }
 }

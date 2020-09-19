@@ -51,5 +51,21 @@ namespace TestLibrary
             //Assert
             Assert.AreEqual(lP, mc.LicensePlate);
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(LicensePlateMaxCharacterLengthException))]
+        public void TestSetLicensePlateBeyond7Characters()
+        {
+            //Arrange
+            MC mc = new MC();
+            //Example plate
+            string lP = "BD033023";
+
+            //Act
+            mc.LicensePlate = lP;
+
+            //Assert
+            Assert.AreEqual(lP, mc.LicensePlate);
+        }
     }
 }

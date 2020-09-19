@@ -2,7 +2,7 @@
 
 namespace TicketLibrary
 {
-    class LicensePlateMaxCharacterLengthException : Exception
+    public class LicensePlateMaxCharacterLengthException : Exception
     {
         public LicensePlateMaxCharacterLengthException() : base("The entered license plate exceeds 7 characters")
         {
