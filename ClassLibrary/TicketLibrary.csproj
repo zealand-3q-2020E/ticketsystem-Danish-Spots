@@ -4,13 +4,5 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>C:\Users\jhmai\Source\Repos\zealand-3q-2020E\ticketsystem-Danish-Spots\ClassLibrary\TicketLibrary.xml</DocumentationFile>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>C:\Users\jhmai\Source\Repos\zealand-3q-2020E\ticketsystem-Danish-Spots\ClassLibrary\TicketLibrary.xml</DocumentationFile>
-    <OutputPath>Release\</OutputPath>
-  </PropertyGroup>
 
 </Project>

@@ -1,14 +1,17 @@
 ﻿using System;
+using System.Runtime.ConstrainedExecution;
 using TicketLibrary;
 
 namespace StoreBaeltTicketLibrary
 {
-    public class WeekendDiscount
+    public class WeekendDiscount : Vehicle
     {
         public double WeekendDiscountCar()
         {
-            double initialPrice = new Car().Price(false);
-            return initialPrice - (initialPrice * (20.0 / 100));
+            Car car = new Car();
+            double initialPrice = car.Price(false);
+            FinalPrice =  initialPrice - (initialPrice * (20.0 / 100));
+            return FinalPrice;
         }
     }
 }

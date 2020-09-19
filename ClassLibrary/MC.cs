@@ -11,9 +11,12 @@
         {
             if (useBrobizz)
             {
-                return base.Price(125, 5);
+                FinalPrice = base.Price(125, .05);
+                return FinalPrice;
             }
-            return 125.00;
+
+            FinalPrice = 125.00;
+            return FinalPrice;
         }
 
         /// <summary>

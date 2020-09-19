@@ -10,8 +10,13 @@ namespace OresundBron
         public override double Price(bool useBrobizz)
         {
             if (useBrobizz)
-                return 73.00;
-            return 210.00;
+            {
+                FinalPrice = 73.00;
+                return FinalPrice;
+            }
+
+            FinalPrice = 210.00;
+            return FinalPrice;
         }
 
         public override string VehicleType()

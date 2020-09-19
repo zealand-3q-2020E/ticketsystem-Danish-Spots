@@ -33,6 +33,15 @@ namespace TicketLibrary
         }
 
         /// <summary>
+        /// Gets and sets the final price after calculating discounts. Implemented in child classes
+        /// </summary>
+        public double FinalPrice
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
         /// Method to be overridden in child classes for returning the price of a ticket
         /// </summary>
         /// <param name="useBrobizz">A bool that determines if a brobizz is used, true is yes and false is no</param>
@@ -46,11 +55,11 @@ namespace TicketLibrary
         /// Internal method that can only be called from child classes, which calculates the new price if a brobizz is used.
         /// </summary>
         /// <param name="initialPrice">The initial price of the ticket</param>
-        /// <param name="discount">the discount percentage given in double form eg 5 is 5%</param>
+        /// <param name="discountPercent">the discount percentage given in double form eg 0.05 is 5%</param>
         /// <returns>returns the initial price - the discount</returns>
-        protected double Price(double initialPrice, double discount)
+        protected double Price(double initialPrice, double discountPercent)
         {
-            return initialPrice - (initialPrice * (discount/100));
+            return initialPrice - (initialPrice * discountPercent);
         }
 
         /// <summary>

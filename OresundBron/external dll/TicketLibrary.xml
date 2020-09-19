@@ -40,6 +40,11 @@
             Property for getting and setting the Date and Time of ticket purchase
             </summary>
         </member>
+        <member name="P:TicketLibrary.Vehicle.FinalPrice">
+            <summary>
+            Gets and sets the final price after calculating discounts. Implemented in child classes
+            </summary>
+        </member>
         <member name="M:TicketLibrary.Vehicle.Price(System.Boolean)">
             <summary>
             Method to be overridden in child classes for returning the price of a ticket
@@ -52,7 +57,7 @@
             Internal method that can only be called from child classes, which calculates the new price if a brobizz is used.
             </summary>
             <param name="initialPrice">The initial price of the ticket</param>
-            <param name="discount">the discount percentage given in double form eg 5 is 5%</param>
+            <param name="discountPercent">the discount percentage given in double form eg 0.05 is 5%</param>
             <returns>returns the initial price - the discount</returns>
         </member>
         <member name="M:TicketLibrary.Vehicle.VehicleType">
