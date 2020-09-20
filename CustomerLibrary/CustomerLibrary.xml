@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CustomerLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:CustomerLibrary.Customer">
+            <summary>
+            Class that creates a customer object for traveling over bridges
+            </summary>
+        </member>
+        <member name="M:CustomerLibrary.Customer.#ctor">
+            <summary>
+            Basic constructor that takes no arguments
+            </summary>
+        </member>
+        <member name="M:CustomerLibrary.Customer.#ctor(System.Collections.Generic.List{TicketLibrary.Vehicle})">
+            <summary>
+            Overloaded constructor that takes a list of trips as an argument
+            </summary>
+            <param name="tripsList">A list of trips that can be loaded into a customer object</param>
+        </member>
+        <member name="P:CustomerLibrary.Customer.TripsList">
+            <summary>
+            A list of trips a customer has taken over bridges, only has get
+            </summary>
+        </member>
+        <member name="M:CustomerLibrary.Customer.TotalPriceOfAllTrips">
+            <summary>
+            A method for calculating the total cost of all trips over bridges a customer has been on
+            </summary>
+            <returns>Returns the sum of all the vehicle object's ticket prices in TripsList</returns>
+        </member>
+    </members>
+</doc>

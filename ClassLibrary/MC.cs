@@ -1,5 +1,8 @@
 ﻿namespace TicketLibrary
 {
+    /// <summary>
+    /// Class that creates a motorcycle object for traveling over bridges
+    /// </summary>
     public class MC : Vehicle
     {
         /// <summary>

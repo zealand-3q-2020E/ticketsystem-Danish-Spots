@@ -1,7 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>C:\Users\jhmai\Source\Repos\zealand-3q-2020E\ticketsystem-Danish-Spots\StoreBaeltTicketLibrary\StoreBaeltTicketLibrary.xml</DocumentationFile>
+    <OutputPath>C:\Users\jhmai\source\repos\zealand-3q-2020E\ticketsystem-Danish-Spots\All DLLS\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>

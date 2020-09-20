@@ -2,6 +2,9 @@
 
 namespace TicketLibrary
 {
+    /// <summary>
+    /// Base class that all vehicles should inherit from. Should only be used as a Parent, never  = new Vehicle().
+    /// </summary>
     public class Vehicle
     {
         private string _lP = "";
