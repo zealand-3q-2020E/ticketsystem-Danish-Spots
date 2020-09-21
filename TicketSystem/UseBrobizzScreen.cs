@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using StoreBaeltTicketLibrary;
 
 namespace TicketSystem
 {
     public static class UseBrobizzScreen
     {
+        public static WeekendDiscount wD { get; set; }
+
         public static void SelectBroBizzScreen()
         {
             WriteToScreen(0, 1);
@@ -19,7 +22,7 @@ namespace TicketSystem
                     switch (key1.Key)
                     {
                         case ConsoleKey.Enter:
-                            EnterInformationScreen.VehicleObject.Price(false);
+                            CheckIfWeekend(false);
                             PricingScreen.PriceResultScreenMethod();
                             break;
                         case ConsoleKey.DownArrow:
@@ -32,7 +35,7 @@ namespace TicketSystem
                 }
                 else if (key.Key == ConsoleKey.Enter)
                 {
-                    EnterInformationScreen.VehicleObject.Price(true);
+                    CheckIfWeekend(true);
                     PricingScreen.PriceResultScreenMethod();
                     break;
                 }
@@ -48,6 +51,19 @@ namespace TicketSystem
             Console.WriteLine("Choose yes, if using brobizz, and no if not using brobizz");
             Console.WriteLine(startMenu[index1]);
             Console.WriteLine(startMenu[index2]);
+        }
+
+        public static void CheckIfWeekend(bool useBrobizz)
+        {
+            if (EnterInformationScreen.VehicleObject.Date.DayOfWeek == DayOfWeek.Sunday ||
+                EnterInformationScreen.VehicleObject.Date.DayOfWeek == DayOfWeek.Saturday)
+            {
+                if (EnterInformationScreen.SelectedTicketType == Constants.TicketType.STOREBAELT_TICKET)
+                    EnterInformationScreen.VehicleObject.FinalPrice =
+                        new WeekendDiscount().WeekendDiscountCar(useBrobizz);
+            }
+            else
+                EnterInformationScreen.VehicleObject.Price(useBrobizz);
         }
     }
 }

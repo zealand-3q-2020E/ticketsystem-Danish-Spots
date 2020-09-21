@@ -12,13 +12,17 @@ namespace StoreBaeltTicketLibrary
         /// <summary>
         /// Method for getting the price of a ticket for a car on the weekends for the StoreBaelt bridge.
         /// </summary>
-        /// <returns>returns the double of 240 - (240 * 20%)</returns>
-        public double WeekendDiscountCar()
+        /// <param name="useBrobizz">true if brobizz is used false if not</param>
+        /// <returns>returns the double of 240 - (240 * 20%) and then applies brobizz ontop</returns>
+        public double WeekendDiscountCar(bool useBrobizz)
         {
             Car car = new Car();
             double initialPrice = car.Price(false);
-            FinalPrice =  initialPrice - (initialPrice * (20.0 / 100));
-            return FinalPrice;
+            double returnValue = initialPrice - (initialPrice * (20.0 / 100));
+            if (useBrobizz)
+                returnValue = returnValue - (returnValue * .05);
+            FinalPrice = returnValue;
+            return returnValue;
         }
     }
 }

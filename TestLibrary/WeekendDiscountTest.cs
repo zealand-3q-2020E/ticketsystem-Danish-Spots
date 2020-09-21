@@ -16,10 +16,23 @@ namespace TestLibrary
             WeekendDiscount wD = new WeekendDiscount();
 
             //Act
-            double discountedPrice = wD.WeekendDiscountCar();
+            double discountedPrice = wD.WeekendDiscountCar(false);
 
             //Assert
             Assert.AreEqual(192, discountedPrice, 0.01);
+        }
+
+        [TestMethod]
+        public void TestWeekendDiscountCarUseBrobizz()
+        {
+            //Arrange
+            WeekendDiscount wD = new WeekendDiscount();
+
+            //Act
+            double discountedPrice = wD.WeekendDiscountCar(true);
+
+            //Assert
+            Assert.AreEqual(182.4, discountedPrice, 0.01);
         }
     }
 }

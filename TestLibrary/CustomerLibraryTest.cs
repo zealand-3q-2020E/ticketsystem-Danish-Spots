@@ -27,7 +27,7 @@ namespace TestLibrary
 
             //Act
             oCar1.Price(false);
-            sCar1.WeekendDiscountCar();
+            sCar1.WeekendDiscountCar(false);
             car1.Price(true);
             mc1.Price(false);
             oMC.Price(true);
@@ -56,7 +56,7 @@ namespace TestLibrary
 
             //Act
             oCar1.Price(false);
-            sCar1.WeekendDiscountCar();
+            sCar1.WeekendDiscountCar(false);
             car1.Price(true);
             mc1.Price(false);
             oMC.Price(true);
