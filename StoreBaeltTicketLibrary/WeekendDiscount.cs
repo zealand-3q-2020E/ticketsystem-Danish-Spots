@@ -18,7 +18,7 @@ namespace StoreBaeltTicketLibrary
         {
             Car car = new Car();
             double initialPrice = car.Price(false);
-            double returnValue = initialPrice - (initialPrice * (20.0 / 100));
+            double returnValue = initialPrice * 0.8;
             if (useBrobizz)
                 returnValue = returnValue - (returnValue * .05);
             FinalPrice = returnValue;
