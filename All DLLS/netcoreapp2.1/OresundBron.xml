@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OresundBron</name>
+    </assembly>
+    <members>
+        <member name="T:OresundBron.OresundCar">
+            <summary>
+            Class that creates a car object for traveling over the Oresund bridge
+            </summary>
+        </member>
+        <member name="M:OresundBron.OresundCar.Price(System.Boolean)">
+            <summary>
+            Method that gets the price of a ticket
+            </summary>
+            <param name="useBrobizz">true for if the car has a brobizz, false if no</param>
+            <returns>Returns 410 if brobizz is used, and 161 if no brobizz is used</returns>
+        </member>
+        <member name="M:OresundBron.OresundCar.VehicleType">
+            <summary>
+            Method that returns the vehicle type that is buying the ticket
+            </summary>
+            <returns>Returns "Oresund car"</returns>
+        </member>
+        <member name="T:OresundBron.OresundMC">
+            <summary>
+            Class that creates a motorcycle object for traveling over the Oresund bridge
+            </summary>
+        </member>
+        <member name="M:OresundBron.OresundMC.Price(System.Boolean)">
+            <summary>
+            Method that gets the price of a ticket
+            </summary>
+            <param name="useBrobizz">true or false for if you are using a discount (yes or no)</param>
+            <returns>Returns 210 for no brobizz and 73 for if a brobizz is used</returns>
+        </member>
+        <member name="M:OresundBron.OresundMC.VehicleType">
+            <summary>
+            Method that returns the vehicle type that is buying the ticket
+            </summary>
+            <returns>Returns "Oresund MC"</returns>
+        </member>
+    </members>
+</doc>

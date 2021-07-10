@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary", "ClassLibrary\ClassLibrary.csproj", "{68DCEA9D-2012-4E55-BC6C-7F5B0A18C7D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketLibrary", "ClassLibrary\TicketLibrary.csproj", "{68DCEA9D-2012-4E55-BC6C-7F5B0A18C7D5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestLibrary", "TestLibrary\TestLibrary.csproj", "{6068279E-94C5-4A40-B56A-ACF37B413570}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreBaeltTicketLibrary", "StoreBaeltTicketLibrary\StoreBaeltTicketLibrary.csproj", "{6DD26465-209A-4E67-B91C-12F73E767F37}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OresundBron", "OresundBron\OresundBron.csproj", "{BBDE2F41-E201-484E-B764-0613A50E7D3E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerLibrary", "CustomerLibrary\CustomerLibrary.csproj", "{1416A0A5-BC8F-4D36-821E-675AF5703BA9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketSystem", "TicketSystem\TicketSystem.csproj", "{1453B1D1-1ADA-4D4D-A6C7-BFBA6943DDAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyConverterLibrary", "CurrencyConverterLibrary\CurrencyConverterLibrary.csproj", "{A7750C08-7334-44F7-9CCA-83885B9E899B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +27,30 @@ Global
 		{68DCEA9D-2012-4E55-BC6C-7F5B0A18C7D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68DCEA9D-2012-4E55-BC6C-7F5B0A18C7D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68DCEA9D-2012-4E55-BC6C-7F5B0A18C7D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6068279E-94C5-4A40-B56A-ACF37B413570}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6068279E-94C5-4A40-B56A-ACF37B413570}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6068279E-94C5-4A40-B56A-ACF37B413570}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6068279E-94C5-4A40-B56A-ACF37B413570}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DD26465-209A-4E67-B91C-12F73E767F37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DD26465-209A-4E67-B91C-12F73E767F37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DD26465-209A-4E67-B91C-12F73E767F37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DD26465-209A-4E67-B91C-12F73E767F37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBDE2F41-E201-484E-B764-0613A50E7D3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBDE2F41-E201-484E-B764-0613A50E7D3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBDE2F41-E201-484E-B764-0613A50E7D3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBDE2F41-E201-484E-B764-0613A50E7D3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1416A0A5-BC8F-4D36-821E-675AF5703BA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1416A0A5-BC8F-4D36-821E-675AF5703BA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1416A0A5-BC8F-4D36-821E-675AF5703BA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1416A0A5-BC8F-4D36-821E-675AF5703BA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1453B1D1-1ADA-4D4D-A6C7-BFBA6943DDAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1453B1D1-1ADA-4D4D-A6C7-BFBA6943DDAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1453B1D1-1ADA-4D4D-A6C7-BFBA6943DDAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1453B1D1-1ADA-4D4D-A6C7-BFBA6943DDAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7750C08-7334-44F7-9CCA-83885B9E899B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7750C08-7334-44F7-9CCA-83885B9E899B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7750C08-7334-44F7-9CCA-83885B9E899B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7750C08-7334-44F7-9CCA-83885B9E899B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

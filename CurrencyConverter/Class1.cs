@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ClassLibrary
+namespace CurrencyConverter
 {
     public class Class1
     {
